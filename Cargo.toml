@@ -1,0 +1,6 @@
+[package]
+name = "hex_d_hex"
+version = "0.1.0"
+authors = ["tyger42"]
+
+[dependencies]
