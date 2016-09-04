@@ -1,6 +1,6 @@
 [package]
 name = "hex_d_hex"
-version = "0.1.0"
+version = "1.0.0"
 authors = ["tyger42"]
 description = "HexDHex is a Rust Crate that encodes and decodes byte data to and from its hexidecimal representation. For instance, one may wish, on ocasion that is, to translate a utf8 or ASCII string of hex byte data such as \"0F12FF00A7\" to a vector of u8s [15,18,255,0,167] or vise versa."
 license = "MIT"
