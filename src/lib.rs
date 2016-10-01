@@ -41,6 +41,8 @@ fn utf8_byte_to_hex_position( byte: u8 ) -> u8 {
 	}
 }
 
+
+
 #[test]
 fn test_utf8_byte_to_hex_position() {
 	assert_eq!(utf8_byte_to_hex_position('0' as u8), 0);
@@ -67,6 +69,7 @@ fn test_utf8_byte_to_hex_position() {
 	assert_eq!(utf8_byte_to_hex_position('F' as u8), 15);
 }
 
+#[inline]
 fn hex_position_to_capital_utf8_byte( hex_position: u8 ) -> u8 {
 	match hex_position {
 		e @ 0...9 => e + 48,
@@ -85,6 +88,7 @@ fn test_hex_position_to_capital_utf8_byte() {
 	assert_eq!(hex_position_to_capital_utf8_byte(0), '0' as u8);
 }
 
+#[inline]
 fn hex_position_to_lower_utf8_byte( hex_position: u8 ) -> u8 {
 	match hex_position {
 		e @ 0...9 => e + 48,
